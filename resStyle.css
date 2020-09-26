@@ -22,6 +22,7 @@ body{
 
 .horizontal-list li{
 	display: inline-block;
+	margin-top: -2px;
 }
 .horizontal-list li a{
 	text-decoration: none;
@@ -56,7 +57,7 @@ nav #toggle{
 	letter-spacing: 0.1rem;
 	font-weight: 700;
 	margin-bottom: 0.5rem;
-	margin-top: 5rem;
+	margin-top: 4rem;
 	color: white;
 }
 
@@ -415,7 +416,17 @@ section:nth-child(2n){
     margin-bottom: 75px;
 }
 
-/* media query for 768px */
+/* media query */
+@media screen and (max-width: 900px){
+	#contact-container{
+		display: block !important;
+	}
+	.contact-ways{
+		width: 80% !important;
+		margin: 10%;
+		text-align: center;
+	}
+}
 @media screen and (max-width: 768px){
 	#timeline-divider{
 		top:8%;
@@ -429,18 +440,12 @@ section:nth-child(2n){
 		width:80%;
 	}
 }
-@media screen and (max-width: 900px){
-	#contact-container{
-		display: block !important;
-	}
-	.contact-ways{
-		width: 80% !important;
-		margin: 10%;
-		text-align: center;
-	}
-}
+
 /* nav menu for mobile*/
 @media screen and (max-width: 572px){
+/*	#body-header #upper-section{
+		opacity: 0;
+	}*/
 	nav label{
 		display: block;
 		cursor: pointer;
